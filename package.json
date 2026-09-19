@@ -1,0 +1,40 @@
+{
+  "name": "task-managment",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "jest": {
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.5",
+    "@babel/preset-env": "^8.0.5",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.20.2",
+    "@types/supertest": "^7.2.1",
+    "babel-jest": "^30.5.1",
+    "cross-env": "^10.1.0",
+    "dotenv-cli": "^11.0.0",
+    "jest": "^30.5.1",
+    "prisma": "^7.10.0",
+    "supertest": "^7.2.2"
+  }
+}
