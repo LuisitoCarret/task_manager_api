@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "test": "cross-env NODE_ENV=test jest",
     "start": "node index.js",
     "dev": "node --watch index.js"
